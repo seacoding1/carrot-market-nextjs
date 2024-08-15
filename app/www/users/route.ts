@@ -9,6 +9,7 @@ export async function GET(request:NextRequest) {
 
 export async function POST(request:NextRequest) {
   const data = await request.json();
-  
+  // 쿠키도 받을 수 있음
+  console.log(data);
   return NextResponse.json(data);
 }
